@@ -1,0 +1,8 @@
+---
+ - name: create_loopback
+   host: all
+   task:
+    -name: set lo0 IPv4 address
+    ios_13_interface:
+    name: lo0
+    ipv4: 7.7.7.7/32
